@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5453F71A21F072A9006B8CFC /* ZMAssistView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F71821F072A9006B8CFC /* ZMAssistView.h */; };
+		5453F71B21F072A9006B8CFC /* ZMAssistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F71921F072A9006B8CFC /* ZMAssistView.m */; };
+		5453F71C21F072A9006B8CFC /* ZMAssistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F71921F072A9006B8CFC /* ZMAssistView.m */; };
+		5453F71E21F072BD006B8CFC /* ZMAssistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5453F71D21F072BD006B8CFC /* ZMAssistView.xib */; };
+		5453F72221F073A8006B8CFC /* ZMFIleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F71F21F073A8006B8CFC /* ZMFIleCell.h */; };
+		5453F72321F073A8006B8CFC /* ZMFIleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F72021F073A8006B8CFC /* ZMFIleCell.m */; };
+		5453F72421F073A8006B8CFC /* ZMFIleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F72021F073A8006B8CFC /* ZMFIleCell.m */; };
+		5453F72521F073A8006B8CFC /* ZMFIleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5453F72121F073A8006B8CFC /* ZMFIleCell.xib */; };
+		5453F72821F078E8006B8CFC /* SWDance.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F72721F078E8006B8CFC /* SWDance.h */; };
+		5453F73321F0809F006B8CFC /* BaseTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F72B21F0809F006B8CFC /* BaseTreeNode.h */; };
+		5453F73421F0809F006B8CFC /* BaseTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F72C21F0809F006B8CFC /* BaseTreeNode.m */; };
+		5453F73521F0809F006B8CFC /* BaseTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F72C21F0809F006B8CFC /* BaseTreeNode.m */; };
+		5453F73621F0809F006B8CFC /* NodeTreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F72E21F0809F006B8CFC /* NodeTreeView.h */; };
+		5453F73721F0809F006B8CFC /* NodeTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F72F21F0809F006B8CFC /* NodeTreeView.m */; };
+		5453F73821F0809F006B8CFC /* NodeTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F72F21F0809F006B8CFC /* NodeTreeView.m */; };
+		5453F73921F0809F006B8CFC /* NodeModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F73121F0809F006B8CFC /* NodeModelProtocol.h */; };
+		5453F73A21F0809F006B8CFC /* NodeViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F73221F0809F006B8CFC /* NodeViewProtocol.h */; };
+		54F429FD21F0540200AFABF4 /* ZMAssist.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F429FC21F0540200AFABF4 /* ZMAssist.m */; };
+		54F429FE21F0540200AFABF4 /* ZMAssist.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54F429FB21F0540200AFABF4 /* ZMAssist.h */; };
+		54F42A0621F055D200AFABF4 /* ZMDeviceConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F42A0521F055D200AFABF4 /* ZMDeviceConsole.m */; };
+		54F42A0A21F0582900AFABF4 /* ZMDeviceLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F42A0921F0582900AFABF4 /* ZMDeviceLog.m */; };
+		54F67A4021F061E9009BF047 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F67A3F21F061E9009BF047 /* AppDelegate.m */; };
+		54F67A4321F061E9009BF047 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F67A4221F061E9009BF047 /* ViewController.m */; };
+		54F67A4621F061E9009BF047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F67A4421F061E9009BF047 /* Main.storyboard */; };
+		54F67A4821F061EA009BF047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F67A4721F061EA009BF047 /* Assets.xcassets */; };
+		54F67A4B21F061EA009BF047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F67A4921F061EA009BF047 /* LaunchScreen.storyboard */; };
+		54F67A4E21F061EA009BF047 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F67A4D21F061EA009BF047 /* main.m */; };
+		54F67A5221F06206009BF047 /* ZMAssist.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F429FC21F0540200AFABF4 /* ZMAssist.m */; };
+		54F67A5321F06218009BF047 /* ZMDeviceLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F42A0921F0582900AFABF4 /* ZMDeviceLog.m */; };
+		54F67A5521F062CE009BF047 /* ZMDeviceLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 54F42A0821F0582900AFABF4 /* ZMDeviceLog.h */; };
+		54F67A5B21F064B2009BF047 /* ZMLogConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 54F67A5921F064B2009BF047 /* ZMLogConfig.h */; };
+		54F67A5C21F064B2009BF047 /* ZMLogConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F67A5A21F064B2009BF047 /* ZMLogConfig.m */; };
+		54F67A5D21F064B2009BF047 /* ZMLogConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F67A5A21F064B2009BF047 /* ZMLogConfig.m */; };
+		BF32654CCF5C59C511528CAE /* libPods-ZMAssistDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FA3BFBC91C1728B439F5AA /* libPods-ZMAssistDemo.a */; };
+		ECDA6CD43FA90231105206F4 /* libPods-ZMAssist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4023D9C8A75F7FFCD26BBF07 /* libPods-ZMAssist.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54F429F621F0540200AFABF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				54F429FE21F0540200AFABF4 /* ZMAssist.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01D81813A9E8BB8D182C1100 /* Pods-ZMAssistDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssistDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssistDemo/Pods-ZMAssistDemo.release.xcconfig"; sourceTree = "<group>"; };
+		079C3AE2582B8FEE19221DB8 /* Pods-ZMAssist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssist/Pods-ZMAssist.debug.xcconfig"; sourceTree = "<group>"; };
+		36FA3BFBC91C1728B439F5AA /* libPods-ZMAssistDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMAssistDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4023D9C8A75F7FFCD26BBF07 /* libPods-ZMAssist.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMAssist.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5453F71821F072A9006B8CFC /* ZMAssistView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAssistView.h; sourceTree = "<group>"; };
+		5453F71921F072A9006B8CFC /* ZMAssistView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAssistView.m; sourceTree = "<group>"; };
+		5453F71D21F072BD006B8CFC /* ZMAssistView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZMAssistView.xib; sourceTree = "<group>"; };
+		5453F71F21F073A8006B8CFC /* ZMFIleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFIleCell.h; sourceTree = "<group>"; };
+		5453F72021F073A8006B8CFC /* ZMFIleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFIleCell.m; sourceTree = "<group>"; };
+		5453F72121F073A8006B8CFC /* ZMFIleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZMFIleCell.xib; sourceTree = "<group>"; };
+		5453F72721F078E8006B8CFC /* SWDance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWDance.h; sourceTree = "<group>"; };
+		5453F72B21F0809F006B8CFC /* BaseTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTreeNode.h; sourceTree = "<group>"; };
+		5453F72C21F0809F006B8CFC /* BaseTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTreeNode.m; sourceTree = "<group>"; };
+		5453F72E21F0809F006B8CFC /* NodeTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeTreeView.h; sourceTree = "<group>"; };
+		5453F72F21F0809F006B8CFC /* NodeTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeTreeView.m; sourceTree = "<group>"; };
+		5453F73121F0809F006B8CFC /* NodeModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeModelProtocol.h; sourceTree = "<group>"; };
+		5453F73221F0809F006B8CFC /* NodeViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeViewProtocol.h; sourceTree = "<group>"; };
+		54F429F821F0540200AFABF4 /* libZMAssist.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZMAssist.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F429FB21F0540200AFABF4 /* ZMAssist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAssist.h; sourceTree = "<group>"; };
+		54F429FC21F0540200AFABF4 /* ZMAssist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAssist.m; sourceTree = "<group>"; };
+		54F42A0421F055D200AFABF4 /* ZMDeviceConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMDeviceConsole.h; sourceTree = "<group>"; };
+		54F42A0521F055D200AFABF4 /* ZMDeviceConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMDeviceConsole.m; sourceTree = "<group>"; };
+		54F42A0821F0582900AFABF4 /* ZMDeviceLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMDeviceLog.h; sourceTree = "<group>"; };
+		54F42A0921F0582900AFABF4 /* ZMDeviceLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMDeviceLog.m; sourceTree = "<group>"; };
+		54F67A3C21F061E9009BF047 /* ZMAssistDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMAssistDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F67A3E21F061E9009BF047 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		54F67A3F21F061E9009BF047 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		54F67A4121F061E9009BF047 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		54F67A4221F061E9009BF047 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54F67A4521F061E9009BF047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54F67A4721F061EA009BF047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54F67A4A21F061EA009BF047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54F67A4C21F061EA009BF047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F67A4D21F061EA009BF047 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54F67A5921F064B2009BF047 /* ZMLogConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMLogConfig.h; sourceTree = "<group>"; };
+		54F67A5A21F064B2009BF047 /* ZMLogConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMLogConfig.m; sourceTree = "<group>"; };
+		CDF3DDB0CCA1D26853739257 /* Pods-ZMAssistDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssistDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssistDemo/Pods-ZMAssistDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DEF685C5BFA3F3B01ACEF48F /* Pods-ZMAssist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssist.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssist/Pods-ZMAssist.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54F429F521F0540200AFABF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDA6CD43FA90231105206F4 /* libPods-ZMAssist.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F67A3921F061E9009BF047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF32654CCF5C59C511528CAE /* libPods-ZMAssistDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C80554A3ABC03420F12506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				079C3AE2582B8FEE19221DB8 /* Pods-ZMAssist.debug.xcconfig */,
+				DEF685C5BFA3F3B01ACEF48F /* Pods-ZMAssist.release.xcconfig */,
+				CDF3DDB0CCA1D26853739257 /* Pods-ZMAssistDemo.debug.xcconfig */,
+				01D81813A9E8BB8D182C1100 /* Pods-ZMAssistDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		390CE859F3601C47AC432287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4023D9C8A75F7FFCD26BBF07 /* libPods-ZMAssist.a */,
+				36FA3BFBC91C1728B439F5AA /* libPods-ZMAssistDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5453F71721F07276006B8CFC /* ZMUI */ = {
+			isa = PBXGroup;
+			children = (
+				5453F72921F0809F006B8CFC /* ZMTreeView */,
+				5453F71821F072A9006B8CFC /* ZMAssistView.h */,
+				5453F71921F072A9006B8CFC /* ZMAssistView.m */,
+				5453F71D21F072BD006B8CFC /* ZMAssistView.xib */,
+				5453F71F21F073A8006B8CFC /* ZMFIleCell.h */,
+				5453F72021F073A8006B8CFC /* ZMFIleCell.m */,
+				5453F72121F073A8006B8CFC /* ZMFIleCell.xib */,
+			);
+			path = ZMUI;
+			sourceTree = "<group>";
+		};
+		5453F72621F078CE006B8CFC /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				5453F72721F078E8006B8CFC /* SWDance.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		5453F72921F0809F006B8CFC /* ZMTreeView */ = {
+			isa = PBXGroup;
+			children = (
+				5453F72A21F0809F006B8CFC /* Nodes */,
+				5453F72D21F0809F006B8CFC /* Views */,
+				5453F73021F0809F006B8CFC /* Protocols */,
+			);
+			path = ZMTreeView;
+			sourceTree = "<group>";
+		};
+		5453F72A21F0809F006B8CFC /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				5453F72B21F0809F006B8CFC /* BaseTreeNode.h */,
+				5453F72C21F0809F006B8CFC /* BaseTreeNode.m */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		5453F72D21F0809F006B8CFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5453F72E21F0809F006B8CFC /* NodeTreeView.h */,
+				5453F72F21F0809F006B8CFC /* NodeTreeView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5453F73021F0809F006B8CFC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5453F73121F0809F006B8CFC /* NodeModelProtocol.h */,
+				5453F73221F0809F006B8CFC /* NodeViewProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		54F429EF21F0540200AFABF4 = {
+			isa = PBXGroup;
+			children = (
+				54F429FA21F0540200AFABF4 /* ZMAssist */,
+				54F67A3D21F061E9009BF047 /* ZMAssistDemo */,
+				54F429F921F0540200AFABF4 /* Products */,
+				28C80554A3ABC03420F12506 /* Pods */,
+				390CE859F3601C47AC432287 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54F429F921F0540200AFABF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54F429F821F0540200AFABF4 /* libZMAssist.a */,
+				54F67A3C21F061E9009BF047 /* ZMAssistDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54F429FA21F0540200AFABF4 /* ZMAssist */ = {
+			isa = PBXGroup;
+			children = (
+				5453F72621F078CE006B8CFC /* Public */,
+				5453F71721F07276006B8CFC /* ZMUI */,
+				54F42A0721F0581500AFABF4 /* ZMDeviceLog */,
+				54F42A0421F055D200AFABF4 /* ZMDeviceConsole.h */,
+				54F42A0521F055D200AFABF4 /* ZMDeviceConsole.m */,
+				54F429FB21F0540200AFABF4 /* ZMAssist.h */,
+				54F429FC21F0540200AFABF4 /* ZMAssist.m */,
+			);
+			path = ZMAssist;
+			sourceTree = "<group>";
+		};
+		54F42A0721F0581500AFABF4 /* ZMDeviceLog */ = {
+			isa = PBXGroup;
+			children = (
+				54F42A0821F0582900AFABF4 /* ZMDeviceLog.h */,
+				54F42A0921F0582900AFABF4 /* ZMDeviceLog.m */,
+				54F67A5921F064B2009BF047 /* ZMLogConfig.h */,
+				54F67A5A21F064B2009BF047 /* ZMLogConfig.m */,
+			);
+			path = ZMDeviceLog;
+			sourceTree = "<group>";
+		};
+		54F67A3D21F061E9009BF047 /* ZMAssistDemo */ = {
+			isa = PBXGroup;
+			children = (
+				54F67A3E21F061E9009BF047 /* AppDelegate.h */,
+				54F67A3F21F061E9009BF047 /* AppDelegate.m */,
+				54F67A4121F061E9009BF047 /* ViewController.h */,
+				54F67A4221F061E9009BF047 /* ViewController.m */,
+				54F67A4421F061E9009BF047 /* Main.storyboard */,
+				54F67A4721F061EA009BF047 /* Assets.xcassets */,
+				54F67A4921F061EA009BF047 /* LaunchScreen.storyboard */,
+				54F67A4C21F061EA009BF047 /* Info.plist */,
+				54F67A4D21F061EA009BF047 /* main.m */,
+			);
+			path = ZMAssistDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54F67A5421F062C8009BF047 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F67A5B21F064B2009BF047 /* ZMLogConfig.h in Headers */,
+				5453F72821F078E8006B8CFC /* SWDance.h in Headers */,
+				5453F73921F0809F006B8CFC /* NodeModelProtocol.h in Headers */,
+				5453F73A21F0809F006B8CFC /* NodeViewProtocol.h in Headers */,
+				5453F72221F073A8006B8CFC /* ZMFIleCell.h in Headers */,
+				5453F71A21F072A9006B8CFC /* ZMAssistView.h in Headers */,
+				54F67A5521F062CE009BF047 /* ZMDeviceLog.h in Headers */,
+				5453F73621F0809F006B8CFC /* NodeTreeView.h in Headers */,
+				5453F73321F0809F006B8CFC /* BaseTreeNode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54F429F721F0540200AFABF4 /* ZMAssist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F42A0121F0540200AFABF4 /* Build configuration list for PBXNativeTarget "ZMAssist" */;
+			buildPhases = (
+				27CC4605B60371D8D322E2CE /* [CP] Check Pods Manifest.lock */,
+				54F429F421F0540200AFABF4 /* Sources */,
+				54F429F521F0540200AFABF4 /* Frameworks */,
+				54F429F621F0540200AFABF4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZMAssist;
+			productName = ZMAssist;
+			productReference = 54F429F821F0540200AFABF4 /* libZMAssist.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		54F67A3B21F061E9009BF047 /* ZMAssistDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F67A5121F061EA009BF047 /* Build configuration list for PBXNativeTarget "ZMAssistDemo" */;
+			buildPhases = (
+				F83C93B7F7102025B42A53FC /* [CP] Check Pods Manifest.lock */,
+				54F67A5421F062C8009BF047 /* Headers */,
+				54F67A3821F061E9009BF047 /* Sources */,
+				54F67A3921F061E9009BF047 /* Frameworks */,
+				54F67A3A21F061E9009BF047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZMAssistDemo;
+			productName = ZMAssistDemo;
+			productReference = 54F67A3C21F061E9009BF047 /* ZMAssistDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54F429F021F0540200AFABF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Yuri Boyka";
+				TargetAttributes = {
+					54F429F721F0540200AFABF4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					54F67A3B21F061E9009BF047 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 54F429F321F0540200AFABF4 /* Build configuration list for PBXProject "ZMAssist" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54F429EF21F0540200AFABF4;
+			productRefGroup = 54F429F921F0540200AFABF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54F429F721F0540200AFABF4 /* ZMAssist */,
+				54F67A3B21F061E9009BF047 /* ZMAssistDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54F67A3A21F061E9009BF047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5453F72521F073A8006B8CFC /* ZMFIleCell.xib in Resources */,
+				54F67A4B21F061EA009BF047 /* LaunchScreen.storyboard in Resources */,
+				54F67A4821F061EA009BF047 /* Assets.xcassets in Resources */,
+				5453F71E21F072BD006B8CFC /* ZMAssistView.xib in Resources */,
+				54F67A4621F061E9009BF047 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27CC4605B60371D8D322E2CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZMAssist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83C93B7F7102025B42A53FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZMAssistDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54F429F421F0540200AFABF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5453F71B21F072A9006B8CFC /* ZMAssistView.m in Sources */,
+				54F429FD21F0540200AFABF4 /* ZMAssist.m in Sources */,
+				5453F73721F0809F006B8CFC /* NodeTreeView.m in Sources */,
+				5453F72321F073A8006B8CFC /* ZMFIleCell.m in Sources */,
+				54F42A0621F055D200AFABF4 /* ZMDeviceConsole.m in Sources */,
+				5453F73421F0809F006B8CFC /* BaseTreeNode.m in Sources */,
+				54F42A0A21F0582900AFABF4 /* ZMDeviceLog.m in Sources */,
+				54F67A5C21F064B2009BF047 /* ZMLogConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F67A3821F061E9009BF047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F67A4321F061E9009BF047 /* ViewController.m in Sources */,
+				54F67A5D21F064B2009BF047 /* ZMLogConfig.m in Sources */,
+				5453F71C21F072A9006B8CFC /* ZMAssistView.m in Sources */,
+				5453F73521F0809F006B8CFC /* BaseTreeNode.m in Sources */,
+				54F67A4E21F061EA009BF047 /* main.m in Sources */,
+				54F67A4021F061E9009BF047 /* AppDelegate.m in Sources */,
+				5453F73821F0809F006B8CFC /* NodeTreeView.m in Sources */,
+				54F67A5321F06218009BF047 /* ZMDeviceLog.m in Sources */,
+				5453F72421F073A8006B8CFC /* ZMFIleCell.m in Sources */,
+				54F67A5221F06206009BF047 /* ZMAssist.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54F67A4421F061E9009BF047 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F67A4521F061E9009BF047 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54F67A4921F061EA009BF047 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F67A4A21F061EA009BF047 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54F429FF21F0540200AFABF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54F42A0021F0540200AFABF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54F42A0221F0540200AFABF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079C3AE2582B8FEE19221DB8 /* Pods-ZMAssist.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQW337MH2W;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		54F42A0321F0540200AFABF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF685C5BFA3F3B01ACEF48F /* Pods-ZMAssist.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQW337MH2W;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		54F67A4F21F061EA009BF047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF3DDB0CCA1D26853739257 /* Pods-ZMAssistDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQW337MH2W;
+				INFOPLIST_FILE = ZMAssistDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.ZMAssistDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54F67A5021F061EA009BF047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D81813A9E8BB8D182C1100 /* Pods-ZMAssistDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQW337MH2W;
+				INFOPLIST_FILE = ZMAssistDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.ZMAssistDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54F429F321F0540200AFABF4 /* Build configuration list for PBXProject "ZMAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F429FF21F0540200AFABF4 /* Debug */,
+				54F42A0021F0540200AFABF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F42A0121F0540200AFABF4 /* Build configuration list for PBXNativeTarget "ZMAssist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F42A0221F0540200AFABF4 /* Debug */,
+				54F42A0321F0540200AFABF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F67A5121F061EA009BF047 /* Build configuration list for PBXNativeTarget "ZMAssistDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F67A4F21F061EA009BF047 /* Debug */,
+				54F67A5021F061EA009BF047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54F429F021F0540200AFABF4 /* Project object */;
+}
