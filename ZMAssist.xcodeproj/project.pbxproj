@@ -24,6 +24,8 @@
 		5453F73821F0809F006B8CFC /* NodeTreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5453F72F21F0809F006B8CFC /* NodeTreeView.m */; };
 		5453F73921F0809F006B8CFC /* NodeModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F73121F0809F006B8CFC /* NodeModelProtocol.h */; };
 		5453F73A21F0809F006B8CFC /* NodeViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5453F73221F0809F006B8CFC /* NodeViewProtocol.h */; };
+		5499A6B621F56B14008D41A5 /* ZMAssistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5499A6B521F56B14008D41A5 /* ZMAssistTests.m */; };
+		5499A6B821F56B14008D41A5 /* libZMAssist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F429F821F0540200AFABF4 /* libZMAssist.a */; };
 		54F429FD21F0540200AFABF4 /* ZMAssist.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F429FC21F0540200AFABF4 /* ZMAssist.m */; };
 		54F429FE21F0540200AFABF4 /* ZMAssist.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54F429FB21F0540200AFABF4 /* ZMAssist.h */; };
 		54F42A0621F055D200AFABF4 /* ZMDeviceConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F42A0521F055D200AFABF4 /* ZMDeviceConsole.m */; };
@@ -40,9 +42,20 @@
 		54F67A5B21F064B2009BF047 /* ZMLogConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 54F67A5921F064B2009BF047 /* ZMLogConfig.h */; };
 		54F67A5C21F064B2009BF047 /* ZMLogConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F67A5A21F064B2009BF047 /* ZMLogConfig.m */; };
 		54F67A5D21F064B2009BF047 /* ZMLogConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F67A5A21F064B2009BF047 /* ZMLogConfig.m */; };
+		75A3F21ED2096E053A5102E4 /* libPods-ZMAssistTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F204FB091DE84D795AE004EF /* libPods-ZMAssistTests.a */; };
 		BF32654CCF5C59C511528CAE /* libPods-ZMAssistDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FA3BFBC91C1728B439F5AA /* libPods-ZMAssistDemo.a */; };
 		ECDA6CD43FA90231105206F4 /* libPods-ZMAssist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4023D9C8A75F7FFCD26BBF07 /* libPods-ZMAssist.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5499A6B921F56B14008D41A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F429F021F0540200AFABF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F429F721F0540200AFABF4;
+			remoteInfo = ZMAssist;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		54F429F621F0540200AFABF4 /* CopyFiles */ = {
@@ -60,7 +73,9 @@
 /* Begin PBXFileReference section */
 		01D81813A9E8BB8D182C1100 /* Pods-ZMAssistDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssistDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssistDemo/Pods-ZMAssistDemo.release.xcconfig"; sourceTree = "<group>"; };
 		079C3AE2582B8FEE19221DB8 /* Pods-ZMAssist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssist/Pods-ZMAssist.debug.xcconfig"; sourceTree = "<group>"; };
+		2A8167B9391E6184F8026405 /* Pods-ZMAssistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssistTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssistTests/Pods-ZMAssistTests.debug.xcconfig"; sourceTree = "<group>"; };
 		36FA3BFBC91C1728B439F5AA /* libPods-ZMAssistDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMAssistDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A514820AF769161F23BFA5C /* Pods-ZMAssistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssistTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssistTests/Pods-ZMAssistTests.release.xcconfig"; sourceTree = "<group>"; };
 		4023D9C8A75F7FFCD26BBF07 /* libPods-ZMAssist.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMAssist.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5453F71821F072A9006B8CFC /* ZMAssistView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAssistView.h; sourceTree = "<group>"; };
 		5453F71921F072A9006B8CFC /* ZMAssistView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAssistView.m; sourceTree = "<group>"; };
@@ -75,6 +90,11 @@
 		5453F72F21F0809F006B8CFC /* NodeTreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeTreeView.m; sourceTree = "<group>"; };
 		5453F73121F0809F006B8CFC /* NodeModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeModelProtocol.h; sourceTree = "<group>"; };
 		5453F73221F0809F006B8CFC /* NodeViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeViewProtocol.h; sourceTree = "<group>"; };
+		5499A6A621F5681C008D41A5 /* ZMAssistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAssistTests.m; sourceTree = "<group>"; };
+		5499A6A821F5681C008D41A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5499A6B321F56B14008D41A5 /* ZMAssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMAssistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5499A6B521F56B14008D41A5 /* ZMAssistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAssistTests.m; sourceTree = "<group>"; };
+		5499A6B721F56B14008D41A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54F429F821F0540200AFABF4 /* libZMAssist.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZMAssist.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F429FB21F0540200AFABF4 /* ZMAssist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMAssist.h; sourceTree = "<group>"; };
 		54F429FC21F0540200AFABF4 /* ZMAssist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMAssist.m; sourceTree = "<group>"; };
@@ -96,9 +116,19 @@
 		54F67A5A21F064B2009BF047 /* ZMLogConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMLogConfig.m; sourceTree = "<group>"; };
 		CDF3DDB0CCA1D26853739257 /* Pods-ZMAssistDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssistDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssistDemo/Pods-ZMAssistDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF685C5BFA3F3B01ACEF48F /* Pods-ZMAssist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMAssist.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMAssist/Pods-ZMAssist.release.xcconfig"; sourceTree = "<group>"; };
+		F204FB091DE84D795AE004EF /* libPods-ZMAssistTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMAssistTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5499A6B021F56B14008D41A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5499A6B821F56B14008D41A5 /* libZMAssist.a in Frameworks */,
+				75A3F21ED2096E053A5102E4 /* libPods-ZMAssistTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54F429F521F0540200AFABF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +155,8 @@
 				DEF685C5BFA3F3B01ACEF48F /* Pods-ZMAssist.release.xcconfig */,
 				CDF3DDB0CCA1D26853739257 /* Pods-ZMAssistDemo.debug.xcconfig */,
 				01D81813A9E8BB8D182C1100 /* Pods-ZMAssistDemo.release.xcconfig */,
+				2A8167B9391E6184F8026405 /* Pods-ZMAssistTests.debug.xcconfig */,
+				3A514820AF769161F23BFA5C /* Pods-ZMAssistTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -134,6 +166,7 @@
 			children = (
 				4023D9C8A75F7FFCD26BBF07 /* libPods-ZMAssist.a */,
 				36FA3BFBC91C1728B439F5AA /* libPods-ZMAssistDemo.a */,
+				F204FB091DE84D795AE004EF /* libPods-ZMAssistTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,11 +230,31 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		5499A6A521F5681C008D41A5 /* ZMAssistTests */ = {
+			isa = PBXGroup;
+			children = (
+				5499A6A621F5681C008D41A5 /* ZMAssistTests.m */,
+				5499A6A821F5681C008D41A5 /* Info.plist */,
+			);
+			path = ZMAssistTests;
+			sourceTree = "<group>";
+		};
+		5499A6B421F56B14008D41A5 /* ZMAssistTests */ = {
+			isa = PBXGroup;
+			children = (
+				5499A6B521F56B14008D41A5 /* ZMAssistTests.m */,
+				5499A6B721F56B14008D41A5 /* Info.plist */,
+			);
+			path = ZMAssistTests;
+			sourceTree = "<group>";
+		};
 		54F429EF21F0540200AFABF4 = {
 			isa = PBXGroup;
 			children = (
 				54F429FA21F0540200AFABF4 /* ZMAssist */,
 				54F67A3D21F061E9009BF047 /* ZMAssistDemo */,
+				5499A6A521F5681C008D41A5 /* ZMAssistTests */,
+				5499A6B421F56B14008D41A5 /* ZMAssistTests */,
 				54F429F921F0540200AFABF4 /* Products */,
 				28C80554A3ABC03420F12506 /* Pods */,
 				390CE859F3601C47AC432287 /* Frameworks */,
@@ -213,6 +266,7 @@
 			children = (
 				54F429F821F0540200AFABF4 /* libZMAssist.a */,
 				54F67A3C21F061E9009BF047 /* ZMAssistDemo.app */,
+				5499A6B321F56B14008D41A5 /* ZMAssistTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +334,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5499A6B221F56B14008D41A5 /* ZMAssistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5499A6BD21F56B14008D41A5 /* Build configuration list for PBXNativeTarget "ZMAssistTests" */;
+			buildPhases = (
+				7287728F93912AB5B87ED1DD /* [CP] Check Pods Manifest.lock */,
+				5499A6AF21F56B14008D41A5 /* Sources */,
+				5499A6B021F56B14008D41A5 /* Frameworks */,
+				5499A6B121F56B14008D41A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5499A6BA21F56B14008D41A5 /* PBXTargetDependency */,
+			);
+			name = ZMAssistTests;
+			productName = ZMAssistTests;
+			productReference = 5499A6B321F56B14008D41A5 /* ZMAssistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		54F429F721F0540200AFABF4 /* ZMAssist */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54F42A0121F0540200AFABF4 /* Build configuration list for PBXNativeTarget "ZMAssist" */;
@@ -326,6 +399,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Yuri Boyka";
 				TargetAttributes = {
+					5499A6B221F56B14008D41A5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					54F429F721F0540200AFABF4 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -349,11 +425,19 @@
 			targets = (
 				54F429F721F0540200AFABF4 /* ZMAssist */,
 				54F67A3B21F061E9009BF047 /* ZMAssistDemo */,
+				5499A6B221F56B14008D41A5 /* ZMAssistTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5499A6B121F56B14008D41A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54F67A3A21F061E9009BF047 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,6 +471,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7287728F93912AB5B87ED1DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZMAssistTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F83C93B7F7102025B42A53FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,6 +510,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5499A6AF21F56B14008D41A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5499A6B621F56B14008D41A5 /* ZMAssistTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54F429F421F0540200AFABF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,6 +552,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5499A6BA21F56B14008D41A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54F429F721F0540200AFABF4 /* ZMAssist */;
+			targetProxy = 5499A6B921F56B14008D41A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		54F67A4421F061E9009BF047 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -462,6 +580,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5499A6BB21F56B14008D41A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A8167B9391E6184F8026405 /* Pods-ZMAssistTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQW337MH2W;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+				);
+				INFOPLIST_FILE = ZMAssistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.ZMAssistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		5499A6BC21F56B14008D41A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A514820AF769161F23BFA5C /* Pods-ZMAssistTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQW337MH2W;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+				);
+				INFOPLIST_FILE = ZMAssistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.ZMAssistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
 		54F429FF21F0540200AFABF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -580,7 +748,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQW337MH2W;
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -594,7 +768,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQW337MH2W;
-				OTHER_LDFLAGS = "-ObjC";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -609,14 +789,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQW337MH2W;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+				);
 				INFOPLIST_FILE = ZMAssistDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.ZMAssistDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -627,20 +815,37 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQW337MH2W;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/SDAutoLayout\"",
+				);
 				INFOPLIST_FILE = ZMAssistDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.ZMAssistDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5499A6BD21F56B14008D41A5 /* Build configuration list for PBXNativeTarget "ZMAssistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5499A6BB21F56B14008D41A5 /* Debug */,
+				5499A6BC21F56B14008D41A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54F429F321F0540200AFABF4 /* Build configuration list for PBXProject "ZMAssist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

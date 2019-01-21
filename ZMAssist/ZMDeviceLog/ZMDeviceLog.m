@@ -16,7 +16,90 @@
 #define DeviceLogCachePrefix @"com.zmlog"
 #define APPDELEGATE [[UIApplication sharedApplication] delegate]
 
-                               static ZMDeviceLog *_deviceLog;
+@interface ZMLogMessage ()
+
+@end
+
+@implementation ZMLogMessage
+
++ (NSMutableArray<ZMLogMessage *> *)allLogMessagesForCurrentProcess
+{
+    asl_object_t query = asl_new(ASL_TYPE_QUERY);
+    
+    // Filter for messages from the current process. Note that this appears to happen by default on device, but is required in the simulator.
+    NSString *pidString = [NSString stringWithFormat:@"%d", [[NSProcessInfo processInfo] processIdentifier]];
+    asl_set_query(query, ASL_KEY_PID, [pidString UTF8String], ASL_QUERY_OP_EQUAL);
+    
+    aslresponse response = asl_search(NULL, query);
+    aslmsg aslMessage = NULL;
+    
+    NSMutableArray *logMessages = [NSMutableArray array];
+    while ((aslMessage = asl_next(response))) {
+        [logMessages addObject:[ZMLogMessage logMessageFromASLMessage:aslMessage]];
+    }
+    asl_release(response);
+    
+    return logMessages;
+}
+
++ (NSArray<ZMLogMessage *> *)allLogAfterTime:(double) time {
+    NSMutableArray<ZMLogMessage *>  *allMsg = [self allLogMessagesForCurrentProcess];
+    NSArray *filteredLogMessages = [allMsg filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(ZMLogMessage *logMessage, NSDictionary *bindings) {
+        if (logMessage.timeInterval > time) {
+            return  YES;
+        }
+        return NO;
+    }]];
+    
+    return filteredLogMessages;
+    
+    
+}
+
++(instancetype)logMessageFromASLMessage:(aslmsg)aslMessage
+{
+    ZMLogMessage *logMessage = [[ZMLogMessage alloc] init];
+    
+    const char *timestamp = asl_get(aslMessage, ASL_KEY_TIME);
+    if (timestamp) {
+        NSTimeInterval timeInterval = [@(timestamp) integerValue];
+        const char *nanoseconds = asl_get(aslMessage, ASL_KEY_TIME_NSEC);
+        if (nanoseconds) {
+            timeInterval += [@(nanoseconds) doubleValue] / NSEC_PER_SEC;
+        }
+        logMessage.timeInterval = timeInterval;
+        logMessage.date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    }
+    
+    const char *sender = asl_get(aslMessage, ASL_KEY_SENDER);
+    if (sender) {
+        logMessage.sender = @(sender);
+    }
+    
+    const char *messageText = asl_get(aslMessage, ASL_KEY_MSG);
+    if (messageText) {
+        logMessage.messageText = @(messageText);
+    }
+    
+    const char *messageID = asl_get(aslMessage, ASL_KEY_MSG_ID);
+    if (messageID) {
+        logMessage.messageID = [@(messageID) longLongValue];
+    }
+    
+    return logMessage;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    return [object isKindOfClass:[ZMLogMessage class]] && self.messageID == [object messageID];
+}
+
+- (NSUInteger)hash
+{
+    return (NSUInteger)self.messageID;
+}
+
+@end
 
 @interface ZMDeviceLog ()
 {
@@ -28,6 +111,7 @@
 
 + (ZMDeviceLog *)sharedInstance
 {
+    static ZMDeviceLog *_deviceLog;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _deviceLog = [ZMDeviceLog new];
@@ -39,21 +123,15 @@
 {
     if (self = [super init])
     {
-        [self initialSetup];
+        [self addGestureRecogniser];
     }
     return self;
 }
 
-- (void)initialSetup
+- (void)start
 {
-    [self startLog];
-    [self addGestureRecogniser];
-}
-
-- (void)startLog
-{
-    [NSFileManager.defaultManager removeItemAtPath:_config.logFilePath error:nil];
-    freopen([_config.logFilePath fileSystemRepresentation], "a", stderr);
+    [NSFileManager.defaultManager removeItemAtPath:self.config.logFilePath error:nil];
+    freopen([self.config.logFilePath fileSystemRepresentation], "a", stderr);
 }
 
 - (void)addGestureRecogniser
@@ -72,11 +150,9 @@
     fmt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
     fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
     NSString *dateString = [fmt stringFromDate:now];
-    NSString *logParentDir = [ZM_LOG_ROOT_PATH
+    NSString *logDir = [ZM_LOG_ROOT_PATH
         stringByAppendingPathComponent:[NSString stringWithFormat:@"/%@.%@", DeviceLogCachePrefix,
                                                                   [dateString substringWithRange:NSMakeRange(0, 10)]]];
-    NSString *logDir =
-        [NSString stringWithFormat:@"%@/%@", logParentDir, [dateString substringWithRange:NSMakeRange(11, 2)]];
     [[NSFileManager defaultManager] createDirectoryAtPath:logDir
                               withIntermediateDirectories:YES
                                                attributes:nil
@@ -86,8 +162,8 @@
     {
         if (isDir)
         {
-            NSString *logFileName = [dateString substringWithRange:NSMakeRange(14, 5)];
-            NSString *logFilePath = [NSString stringWithFormat:@"%@/%@", logDir, logFileName];
+            NSString *logFileName = [dateString substringWithRange:NSMakeRange(11, 8)];
+            NSString *logFilePath = [NSString stringWithFormat:@"%@/%@.log", logDir, logFileName];
             return logFilePath;
         }
         else
@@ -220,15 +296,6 @@
         }
         completion:^(BOOL finished){
         }];
-}
-
-- (void)start
-{
-    double delayInSeconds = 0.1;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
-        [ZMDeviceLog logFilePath];
-    });
 }
 
 @end
